@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    
+}
+
+
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #ff4500;
+    --sb-size: 10px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    
+    }
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#buttons {
+   
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index:100;
+}
+
+#buttons > button {
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    height: 40px;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 7px 10px;
+    border: none;
+}
+
+#buttons > button:active {
+    transform: translateY(5px);
+}
+
+#sections {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+}
+
+#sections > div {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    color: white;
+    transition: 500ms ease;
+   
+}
+
+#sections > div > h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: orangered;
+}
+
+.container {
+    margin: auto;
+    height: 350px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+  
+}
+
+.container > div:nth-child(2) {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.container > div > p {
+    color: black;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
